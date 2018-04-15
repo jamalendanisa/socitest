@@ -1,0 +1,52 @@
+  <div class="container">
+	<div class="cont">
+      <div style="width:50%;">
+		<img src="https://www.sociolla.com/img/sociolla-1490960411.jpg" width= '50%';/>
+	  </div>
+	  <div class="buttonprofile">
+	    <button ng-click="cancel()" class="button btn btn-black" style="float:right">Cancel</button>
+	    <button ng-click="submitProfile()" class="button btn btn-black" type="submit" style="float:right;margin-right: 40px;">Submit</button>	
+	  </div>
+	</div>
+	<div class="cont">
+	  <div class="formcontainer">
+        <form name="profile" role="form" ng-submit="submitProfile()">
+        <div class="label">Name</div> 
+        <div class="input"><input type="text" id="name" name="name" ng-model="companyProfile.name" style="width:80%;"></div>
+        <div class="label">Description</div>
+	    <div class="input"><textarea name="description" ng-model="companyProfile.description" rows="7" style="width:80%;"></textarea></div>
+		<fieldset>
+		  <legend>Address</legend>
+			<div class="label">Street</div> 
+			<div class="input"><input type="text" id="street" name="street" ng-model="companyProfile.street" style="width:100%;"></div>
+			<div class="label">City</div> 
+			<div class="input"><input type="text" id="city" name="city" ng-model="companyProfile.city" style="width:100%;"></div>
+			<div class="row">
+			<div class="col-sm-6">
+			<div class="label">Province</div> 
+			<div class="input"><select data-ng-model="companyProfile.province" data-ng-options="province for province in provinces" style="margin-top: 4px;width: 100%;"></select></div>
+			</div>
+			<div class="col-sm-6">
+			<div class="label">Postal Code</div> 
+			<div class="input"><input type="number" id="postalcode" name="postalcode" ng-model="companyProfile.postalcode" style="width:100%;"></div>
+			</div>
+			</div>
+		</fieldset>
+      </form>
+      </div>
+	   <div class="formcontainer">
+        <form name="askUs" role="form" ng-submit="submitAskUs()">
+        <fieldset style="width:94%">
+		  <legend style="width:14%;padding-left:10px;">Ask Us</legend>
+		  	<div class="label">Division</div> 
+			<div class="input"><select data-ng-model="askUs.division" data-ng-options="division for division in divisions" style="width: 50%;"></select></div>
+			<div class="label">Name</div> 
+			<div class="input"><input type="text" ng-model="askUs.name" style="width:80%;"></div>
+			<div class="label">Questions</div>
+			<div class="input"><textarea ng-model="askUs.questions" rows="6" style="width:80%;"></textarea></div>
+			<button class="button btn btn-black" type="submit">Send</button>	
+		</fieldset>
+      </form>
+      </div>
+	</div>
+  </div>

@@ -1,0 +1,46 @@
+1. How​ ​do​ ​you​ ​prevent​ ​the​ ​user​ ​from​ ​submitting​ ​the​ ​form​ ​prematurely​ ​when​ ​the​ ​user hit​ ​enter?  
+   Answer:
+   
+   - Include the following element into the head part of the document:
+	 * <script type="text/javascript">
+		function noenter() {
+		return !(window.event && window.event.keyCode == 13); }
+	  </script> *
+   - Add the following attribute into each input type="text" tag(s) in the form:
+	 * onkeypress="return noenter()" *
+
+
+2. How​ ​do​ ​you​ ​add​ ​validation​ ​and​ ​error​ ​messages​ ​to​ ​the​ ​form? 
+   I usually use AngularJS for the framework so i use form validation by binding the form with the model state.
+   If the model is required and it's still empty when the user click the submit button, it will have the error value.
+   Then, the error messages​ can be shown.
+   
+3. What​ ​is​ ​the​ ​most​ ​important​ ​html​ ​element​ ​for​ ​building​ ​a​ ​good​ ​SEO? 
+   - Title Tag
+   - Meta Description
+   - h1, h2, h3 Heading Tag
+   - Internal Links and Anchor Text
+   - Image Alt Tags
+   - Bold or Strong tags
+   - Hyperlinks
+   - No Follow Hyperlinks
+
+4. What​ ​is​ ​the​ ​difference​ ​between​ ​responsive​ ​and​ ​adaptive​ ​design? 
+   Responsive design is one layout design that works no matter what the screen size is. No matter how much 
+   the screen's resized, that same layout will automatically respond to that size.
+   While Adaptive design is several distinct layouts for multiple screen sizes. 
+   And the layout used depends on the screen size used. There could be a specific layout for mobile phones,
+   tablets, and desktop computers, each of which are made in advance. These three designs wait on standby
+   until someone visits the site. The site detects the type of device used,and delivers the pre-set layout for that device.
+   
+5. What​ ​is​ ​difference​ ​between​ ​id​ ​and​ ​class? 
+   ID can be used to identify one element, while a class can be used to identify more than one.
+   
+6. How​ ​many​ ​columns​ ​available​ ​in​ ​css​ ​bootstrap? 
+   Bootstrap's grid system allows up to 12 columns across the page.
+   
+7. What​ ​js​ ​framework​ ​or​ ​tools​ ​are​ ​you​ ​familiar​ ​with? 
+   AngularJS
+   
+8. How​ ​to​ ​communicate​ ​with​ ​server​ ​without​ ​reloading​ ​a​ ​page? 
+   with Ajax
